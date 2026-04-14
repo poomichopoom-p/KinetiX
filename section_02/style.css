@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap');
+
+:root {
+    
+    --volt-green: #C3FF51;
+    --lime-volt: #D3FE51;
+    --cyan-electric: #00F0F0;
+    --carbon-black: #080809;
+    --soft-cloud: #E4E6EB;
+    
+    /* Neutral Colors */
+    --pure-white: #FFFFFF;
+    --off-black: #1A1A1A;
+    --gray-500: #6B7280;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: var(--carbon-black);
+    color: var(--pure-white);
+    margin: 0;
+    padding: 40px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.display-text { font-size: 32px; font-weight: 800; } /* Hero headline */
+.h1-text { font-size: 22px; font-weight: 700; }      /* Page title */
+.h2-text { font-size: 16px; font-weight: 600; }      /* Section title */
+.h3-text { font-size: 14px; font-weight: 600; }      /* Card title */
+.body-text { font-size: 13px; font-weight: 400; color: var(--gray-500); }
+.secondary-text { font-size: 12px; font-weight: 400; color: var(--volt-green); }
+.label-text { font-size: 10px; font-weight: 700; text-transform: uppercase; }
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.image-wrapper {
+    background-color: var(--soft-cloud); 
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.size-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background: transparent;
+    color: var(--pure-white);
+    font-size: 11px;
+    font-family: 'Sora';
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.size-btn.active {
+    border-color: var(--volt-green);
+    color: var(--volt-green);
+}
+
+.btn-rent {
+    background-color: #242916; 
+    color: var(--volt-green);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-rent:hover {
+    background-color: var(--lime-volt);
+    color: var(--off-black);
+}
+
+.view-all-link {
+    color: var(--volt-green); 
+    text-decoration: none;
+    font-size: 13px;
+    transition: opacity 0.2s;
+}
+
+.view-all-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
