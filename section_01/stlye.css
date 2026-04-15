@@ -10,6 +10,7 @@ nav div.hightlight {
  font-weight: 400;
  color: black;
  overflow: hidden;
+
  /* white-space: nowrap; */
  /* line-height: 10px; */
  /* animation-duration: 10s;
@@ -18,12 +19,12 @@ nav div.hightlight {
  /* animation-delay: ; */
  /* animation-iteration-count: infinite;
  animation-direction: normal; */
- animation: 15s slide linear infinite;
+ animation: 20s slide linear infinite;
 
 }
 @keyframes slide{
     from {
-        transform: translateX(0%);
+        transform: translateX(0);
     }
     to {
        transform: translateX(-100%);
