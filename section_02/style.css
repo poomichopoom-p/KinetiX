@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap');
 
 :root {
-    
+    /* Original Colors */
     --volt-green: #C3FF51;
     --lime-volt: #D3FE51;
     --cyan-electric: #00F0F0;
@@ -12,6 +12,9 @@
     --pure-white: #FFFFFF;
     --off-black: #1A1A1A;
     --gray-500: #6B7280;
+
+    /* New Gradient จาก Ref (เพิ่มใหม่) */
+    --brand-gradient: linear-gradient(135deg, #00FF41 0%, #00E5FF 100%);
 }
 
 body {
@@ -23,15 +26,16 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
-.display-text { font-size: 32px; font-weight: 800; } /* Hero headline */
-.h1-text { font-size: 22px; font-weight: 700; }      /* Page title */
-.h2-text { font-size: 16px; font-weight: 600; }      /* Section title */
-.h3-text { font-size: 14px; font-weight: 600; }      /* Card title */
+/* Typography */
+.display-text { font-size: 32px; font-weight: 800; }
+.h1-text { font-size: 22px; font-weight: 700; }
+.h2-text { font-size: 16px; font-weight: 600; }
+.h3-text { font-size: 14px; font-weight: 600; }
 .body-text { font-size: 13px; font-weight: 400; color: var(--gray-500); }
 .secondary-text { font-size: 12px; font-weight: 400; color: var(--volt-green); }
 .label-text { font-size: 10px; font-weight: 700; text-transform: uppercase; }
 
+/* Layout Components */
 .product-card {
     display: flex;
     flex-direction: column;
@@ -48,6 +52,7 @@ body {
     border-radius: 2px;
 }
 
+/* Size Buttons */
 .size-btn {
     width: 36px;
     height: 36px;
@@ -66,7 +71,9 @@ body {
     color: var(--volt-green);
 }
 
+/* --- [ปุ่มเช่าเลย: ปรับแต่งใหม่ตาม Ref] --- */
 .btn-rent {
+    position: relative; /* สำหรับให้ Layer Gradient ซ้อนได้ */
     background-color: #242916; 
     color: var(--volt-green);
     border: none;
@@ -75,13 +82,36 @@ body {
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/* Layer Gradient ที่จะปรากฏตอน Hover */
+.btn-rent::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--brand-gradient);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
 }
 
 .btn-rent:hover {
-    background-color: var(--lime-volt);
-    color: var(--off-black);
+    color: var(--carbon-black); /* เปลี่ยนสีตัวอักษรเป็นสีเข้ม */
+    transform: translateY(-2px); /* ให้ปุ่มลอยขึ้นนิดนึง */
+    box-shadow: 0 4px 15px rgba(0, 255, 65, 0.3); /* แสงฟุ้งเบาๆ */
 }
+
+.btn-rent:hover::before {
+    opacity: 1; /* โชว์ Gradient */
+}
+
+.btn-rent:active {
+    transform: translateY(0);
+}
+/* -------------------------------------- */
 
 .view-all-link {
     color: var(--volt-green); 
