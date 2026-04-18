@@ -5,18 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="bg-slate-500">
     <!-- sectio04 -->
-    <section class="bg-black">
-      <div class="bg-[#C3FF51] w-[1232px] h-[280]">
+    <section
+      class="bg-black w-screen h-[360px] flex justify-center self-center"
+    >
+      <!-- BG -->
+      <div
+        class="bg-[#C3FF51] w-[1232px] h-[280] flex self-center rounded-[40px]"
+      >
         <!-- Left_box -->
-        <div class="gap-[10px]">
-          <h1>พร้อมวิ่ง วันนี้เลย</h1>
-          <p>ลงทะเบียนฟรี</p>
+        <div
+          class="gap-[60px] w-[360px] h-[260px] px-[10px] flex-col content-center font-[sora]"
+        >
+          <h1
+            class="font-bold text-[32px] px-[10px] flex w-[152px] justify-center"
+          >
+            พร้อมวิ่ง <br />
+            วันนี้เลย
+          </h1>
+          <p class="px-[20px] flex-col w-[152px] justify-center text-[11px]">
+            ลงทะเบียนฟรี
+          </p>
         </div>
+        <!-- Left_box -->
+        <!-- Blank_box -->
+        <div class="w-[660px] h-[260px]"></div>
+        <!-- Blank_box -->
+        <!-- Button_box -->
+        <div class="flex-col content-center w-[220px]">
+          <button
+            type="button"
+            href="https://www.nike.com/th/"
+            class="w-[180px] h-[68px] bg-[#080809] text-[sora] text-[#C3FF51] rounded-[20px]"
+          >
+            <a href="https://www.nike.com/th/"> เริ่มเช่าตอนนี้ </a>
+          </button>
+        </div>
+        <!-- Button_box -->
       </div>
-      <!-- Left_box -->
+      <!-- BG -->
     </section>
+    <!-- section04 -->
   </body>
 </html>
