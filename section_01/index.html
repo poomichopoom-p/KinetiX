@@ -3,57 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing Page Scetion_01</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="/Section/section_01/stlye.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#080809]">
-    <!-- section_01 -->
-    <section>
-        <nav class="bg-[#C3FF51] w-screen h-[40px] py-[10px]">
-            <div class="hightlight">
-
-                <ul class="flex flex-wrap gap-[44px] w-[50%]">
-                    <li>Nike -</li>
-                    <li>Adidas -</li>
-                    <li>ASICS -</li>
-                    <li>BROOKS -</li>
-                    <li>HOKA -</li>
-                    <li>NEW BALANCE -</li>
-                    <li>SALOMON -</li>
-                    <li>MIZUNO -</li>
-                    <li>SAUCONY -</li>
-                </ul>
-                <ul class="flex flex-wrap gap-[44px] w-[50%]">
-                    <li>Nike -</li>
-                    <li>Adidas -</li>
-                    <li>ASICS -</li>
-                <li>BROOKS -</li>
-                <li>HOKA -</li>
-                <li>NEW BALANCE -</li>
-                <li>SALOMON -</li>
-                <li>MIZUNO -</li>
-                <li>SAUCONY -</li>
-            </ul>
-            
+<body class="bg-black">
+    <!-- Section 01 -->
+    <section class= "flex flex-col ">
+        
+        <!-- Nav Bar เคลื่อนที่-->
+        <div class="marquee-strip">
+            <div class="marquee-inner">
+                <!-- duplicate for seamless loop -->
+                <span class="marquee-item">NIKE <span class="marquee-dot"></span></span>
+                <span class="marquee-item">ADIDAS <span class="marquee-dot"></span></span>
+                <span class="marquee-item">ASICS <span class="marquee-dot"></span></span>
+                <span class="marquee-item">BROOKS <span class="marquee-dot"></span></span>
+                <span class="marquee-item">HOKA <span class="marquee-dot"></span></span>
+                <span class="marquee-item">NEW BALANCE <span class="marquee-dot"></span></span>
+                <span class="marquee-item">SALOMON <span class="marquee-dot"></span></span>
+                <span class="marquee-item">MIZUNO <span class="marquee-dot"></span></span>
+                <span class="marquee-item">SAUCONY <span class="marquee-dot"></span></span>
+                <span class="marquee-item">NIKE <span class="marquee-dot"></span></span>
+                <span class="marquee-item">ADIDAS <span class="marquee-dot"></span></span>
+                <span class="marquee-item">ASICS <span class="marquee-dot"></span></span>
+                <span class="marquee-item">BROOKS <span class="marquee-dot"></span></span>
+                <span class="marquee-item">HOKA <span class="marquee-dot"></span></span>
+                <span class="marquee-item">NEW BALANCE <span class="marquee-dot"></span></span>
+                <span class="marquee-item">SALOMON <span class="marquee-dot"></span></span>
+                <span class="marquee-item">MIZUNO <span class="marquee-dot"></span></span>
+                <span class="marquee-item">SAUCONY <span class="marquee-dot"></span></span>
             </div>
-        </nav>
-        <div>
-            <p class="text-[#D3FE51]">
-                
-            </p>
-            <h1 class="text-[32px] text-white">
-
-            </h1>
         </div>
-        <ul class="flex">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+
+        <!-- หัวข้อ -->
+        <div class="mt-20 ml-15 w-fit h-fit text-white">
+             <div class="">
+                 <span class="text-[#C3FF51] text-sm">———— แบรนด์พันธมิตร</span>
+            </div>
+            <div>
+                <span class="text-5xl">เลือกแบรนด์ที่ใช่</span>
+            </div>
+        </div>
+
+        <!-- กล่องแบรนด์ -->
+        <div class="flex justify-center">
+            <div class="mt-15 w-fit h-fit flex gap-10">
+                <div class="w-50 h-50 bg-[rgb(248,250,244,0.05)] text-white flex flex-col items-center justify-center gap-5">
+                    <img src="./shoe logo/Nike.jpg" class="w-10 h-10 rounded-md">
+                    <span>Nike</span>
+                    <span>10 รุ่น</span>
+                </div>
+                <div class="w-50 h-50 bg-[rgb(248,250,244,0.05)] text-white flex flex-col items-center justify-center gap-5">
+                    <img src="./shoe logo/Adidas.jpg" class="w-10 h-10 rounded-md">
+                    <span>Adidas</span>
+                    <span>10 รุ่น</span>
+                </div>
+                <div class="w-50 h-50 bg-[rgb(248,250,244,0.05)] text-white flex flex-col items-center justify-center gap-5">
+                    <img src="./shoe logo/ASICS.jpg" class="w-10 h-10 rounded-md">
+                    <span>ASIC</span>
+                    <span>10 รุ่น</span>
+                </div>
+                <div class="w-50 h-50 bg-[rgb(248,250,244,0.05)] text-white flex flex-col items-center justify-center gap-5">
+                    <img src="./shoe logo/Brooks.jpg" class="w-10 h-10 rounded-md">
+                    <span>brooks</span>
+                    <span>10 รุ่น</span>
+                </div>
+                <div class="w-50 h-50 bg-[rgb(248,250,244,0.05)] text-white flex flex-col items-center justify-center gap-5">
+                    <img src="./shoe logo/Hoka.png" class="w-10 h-10 rounded-md">
+                    <span>Hoka</span>
+                    <span>10 รุ่น</span>
+                </div>
+                <div class="w-50 h-50 bg-[rgb(248,250,244,0.05)] text-white flex flex-col items-center justify-center gap-5">
+                    <img src="./shoe logo/New Balance.jpg" class="w-10 h-10 rounded-md">
+                    <span>New Balance</span>
+                    <span>10 รุ่น</span>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- section_01 -->
 </body>
 </html>
